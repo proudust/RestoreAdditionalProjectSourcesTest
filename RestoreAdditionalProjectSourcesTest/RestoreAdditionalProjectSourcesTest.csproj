@@ -5,6 +5,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <RestoreAdditionalProjectSources>$(MSBuildThisFileDirectory)/../LocalPackages/</RestoreAdditionalProjectSources>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClassLibrary1" Version="1.0.0" />
+  </ItemGroup>
 
 </Project>
